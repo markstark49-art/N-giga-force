@@ -1,0 +1,37 @@
+# 🛡️ Blindaje N-Giga-Forge v17.0
+
+# Secretos y Configuración (NUNCA SUBIR)
+.env
+*.env
+config.json
+credentials.json
+*.pth
+
+# Entornos Virtuales
+venv/
+.venv/
+env/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# Caché y Temporales
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Telemetría y Pesos (Archivos Grandes)
+# (Permitimos CSV para validación científica, ignoramos logs extensos)
+telemetry_and_proofs/*.log
+src/sonda_rl_weights.pth
+
+# Logs del Sistema
+*.log
+sonda_consciousness.log
+outputs/
+
+# OS
+.DS_Store
+Thumbs.db
