@@ -6,19 +6,19 @@ import sys
 print(">> INICIANDO LABORATORIO SIMBÓLICO HPC...")
 
 try:
-    # 🪐 Carga de Evidencia Chronos v20.3
-    df = pd.read_csv('telemetry_and_proofs/telemetry_chronos_stable_v20.3.csv').astype(np.float64)
+    # 🪐 Carga de Evidencia Industrial v20.4 (50M Agentes)
+    df = pd.read_csv('telemetry_and_proofs/telemetry_chronos_industrial_v20.4.csv').astype(np.float64)
 except FileNotFoundError:
-    print("ERROR FATAL: 'telemetry_chronos_stable_v20.3.csv' no existe. Ejecuta el Motor Chronos v20.3 primero.")
+    print("ERROR FATAL: 'telemetry_chronos_industrial_v20.4.csv' no existe. Ejecuta el Motor Industrial v20.4 primero.")
     sys.exit(1)
 
-# 1. Preparación de Datos (Fase Temporal)
-# Analizaremos la deriva del error de Déjà vu
+# 1. Preparación de Datos (Fase Industrial)
+# Auditoría de la simetría perfecta de markstark49-art
 X = df[['step']].values
 y = df['error'].values
 
 print(f"\n==================================================")
-print(f"🧬 MUTANDO ÁRBOLES MATEMÁTICOS PARA: Error Temporal (Simetría Chronos)")
+print(f"🧬 MUTANDO ÁRBOLES MATEMÁTICOS PARA: Cero Absoluto (Simetría 50M)")
 print(f"==================================================")
 
 # 2. Configuración del Regresor Simbólico (PySR)
