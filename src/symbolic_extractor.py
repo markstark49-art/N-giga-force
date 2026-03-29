@@ -6,19 +6,19 @@ import sys
 print(">> INICIANDO LABORATORIO SIMBÓLICO HPC...")
 
 try:
-    # 🪐 Carga de Evidencia Cuántica v19.0
-    df = pd.read_csv('telemetry_and_proofs/telemetry_quantum_gravity_v19.0.csv').astype(np.float64)
+    # 🪐 Carga de Evidencia Chronos v20.3
+    df = pd.read_csv('telemetry_and_proofs/telemetry_chronos_stable_v20.3.csv').astype(np.float64)
 except FileNotFoundError:
-    print("ERROR FATAL: 'telemetry_quantum_gravity_v19.0.csv' no existe. Ejecuta el Motor v19.0 primero.")
+    print("ERROR FATAL: 'telemetry_chronos_stable_v20.3.csv' no existe. Ejecuta el Motor Chronos v20.3 primero.")
     sys.exit(1)
 
-# 1. Preparación de Datos (Fase Celeste Industrial)
-# Analizaremos cómo la distancia a la Tierra escala la Energía Cinética
-X = df[['avg_dist_earth']].values
-y = df['kinetic_energy'].values
+# 1. Preparación de Datos (Fase Temporal)
+# Analizaremos la deriva del error de Déjà vu
+X = df[['step']].values
+y = df['error'].values
 
 print(f"\n==================================================")
-print(f"🧬 MUTANDO ÁRBOLES MATEMÁTICOS PARA: Vx (Eficiencia Geométrica)")
+print(f"🧬 MUTANDO ÁRBOLES MATEMÁTICOS PARA: Error Temporal (Simetría Chronos)")
 print(f"==================================================")
 
 # 2. Configuración del Regresor Simbólico (PySR)
