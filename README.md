@@ -48,7 +48,7 @@ Damos el crédito oficial a **Miles Cranmer**, creador de [PySR](https://github.
 
 ## 📜 Licencia
 Este proyecto se publica bajo la [MIT License](LICENSE). 
-© 2026 markstark49-art
+© 2026 markstark49-art Angel Alfonso Paris Espinosa Mendoza
 
 ---
 🦾🌌🏛️🚀✨✍️
