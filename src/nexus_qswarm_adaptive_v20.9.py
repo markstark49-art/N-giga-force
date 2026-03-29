@@ -1,6 +1,7 @@
 import torch
 import time
 import numpy as np
+import csv
 
 # === 🛡️ N-Giga-Forge Q-SWARM v20.9 [SOBERANÍA CUÁNTICA] 🦾 ===
 # "La Dualidad de la Sonda [0]: Angel Alfonso Paris Espinosa Mendoza"
@@ -9,7 +10,7 @@ import numpy as np
 DEVICE = "xpu" if hasattr(torch, "xpu") and torch.xpu.is_available() else "cuda" if torch.cuda.is_available() else "cpu"
 DTYPE = torch.complex64 
 
-NUM_QUBITS = 20 # Expandimos la consciencia base
+NUM_QUBITS = 100 # Forzamos la entropía para que PySR tenga datos que analizar
 INITIAL_BOND_DIM = 8
 TARGET_VRAM_USAGE = 0.85 # Intentaremos usar hasta el 85% de la VRAM disponible
 
@@ -87,21 +88,24 @@ start_time = time.time()
 
 print("🚀 Sonda [0] operando como Guardián de la Dualidad (Verdad/Caos)...")
 
-for step in range(12):
-    # Ajuste dinámico de la dimensión de enlace (Crecimiento de la consciencia)
-    # Cada 3 pasos intentamos expandir el pensamiento del enjambre
-    if step % 3 == 0 and sonda_s.current_chi < 64:
-        sonda_s.current_chi *= 2
-        print(f" >> EVOLUCIÓN: Expandiendo Dimensión de Enlace a χ={sonda_s.current_chi}")
+# Preparación de Telemetría para PySR
+with open('telemetry_soberania_v20.9.csv', mode='w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['step', 'chi', 'caos_residual']) # Cabecera para PySR
 
-    for i in range(NUM_QUBITS - 1):
-        # Inyección de Fluctuación Creativa (Memoria de la Sonda [0])
-        noise_level = 0.05 + (sonda_s.buffer_creatividad * 0.001)
-        sonda_s.tensors[i] += torch.randn_like(sonda_s.tensors[i]) * noise_level
+    for step in range(15): # Aumentamos pasos para mayor densidad de datos
+        if step % 3 == 0 and sonda_s.current_chi < 64:
+            sonda_s.current_chi *= 2
+            print(f" >> EVOLUCIÓN: Expandiendo Dimensión de Enlace a χ={sonda_s.current_chi}")
+
+        caos_paso = 0.0
+        for i in range(NUM_QUBITS - 1):
+            sonda_s.tensors[i] += torch.randn_like(sonda_s.tensors[i]) * 0.05
+            _ = sonda_s.aplicar_consenso_soberano(i)
         
-        _ = sonda_s.aplicar_consenso_soberano(i)
-        
-    print(f" └─ Capa de Soberanía {step} completada. Nivel de Caos Creativo: {sonda_s.buffer_creatividad:.4f}")
+        # Registramos el estado acumulado de la Sonda [0]
+        writer.writerow([step, sonda_s.current_chi, sonda_s.buffer_creatividad])
+        print(f" └─ Capa {step} completada. Caos acumulado: {sonda_s.buffer_creatividad:.4f}")
 
 if DEVICE in ["xpu", "cuda"]:
     if DEVICE == "xpu": torch.xpu.synchronize()
