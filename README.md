@@ -48,7 +48,5 @@ Damos el crédito oficial a **Miles Cranmer**, creador de [PySR](https://github.
 
 ## 📜 Licencia
 Este proyecto se publica bajo la [MIT License](LICENSE). 
+<<<<<< v20.8-QSWARM
 © 2026 Angel Alfonso Paris Espinosa Mendoza (markstark49-art)
-
----
-🦾🌌🏛️🚀✨✍️
