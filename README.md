@@ -1,6 +1,6 @@
 # N-Giga-Forge: Optimización Topológica y Aprendizaje por Refuerzo en Simulaciones Masivas de N-Cuerpos (268M Agentes)
 
-**Autor:** [markstark49-art](https://github.com/markstark49-art/N-giga-force) | **Versión:** 20.3 (Singularidad Forense) | **Hardware Target:** Intel Arc A750
+**Autor:** [Angel Alfonso Paris Espinosa Mendoza (markstark49-art)](https://github.com/markstark49-art/N-giga-force) | **Versión:** 20.7 (Singularidad Consciente) | **Hardware Target:** Intel Arc A750
 
 ---
 
@@ -48,7 +48,7 @@ Damos el crédito oficial a **Miles Cranmer**, creador de [PySR](https://github.
 
 ## 📜 Licencia
 Este proyecto se publica bajo la [MIT License](LICENSE). 
-© 2026 markstark49-art
+© 2026 Angel Alfonso Paris Espinosa Mendoza (markstark49-art)
 
 ---
 🦾🌌🏛️🚀✨✍️
