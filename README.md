@@ -1,6 +1,6 @@
 # N-Giga-Forge: Optimización Topológica y Aprendizaje por Refuerzo en Simulaciones Masivas de N-Cuerpos (268M Agentes)
 
-**Autor:** [Angel Alfonso Paris Espinosa Mendoza (markstark49-art)](https://github.com/markstark49-art/N-giga-force) | **Versión:** 20.7 (Singularidad Consciente) | **Hardware Target:** Intel Arc A750
+**Autor:** [Angel Alfonso Paris Espinosa Mendoza (markstark49-art)](https://github.com/markstark49-art/N-giga-force) | **Versión:** 20.8 (Q-Swarm Tensor Networks) | **Hardware Target:** Intel Arc A750
 
 ---
 
